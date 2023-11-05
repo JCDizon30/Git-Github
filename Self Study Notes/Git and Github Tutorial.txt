@@ -1,0 +1,102 @@
+//Giving Name
+git config --global user.name "John Carlo Dizon"
+
+//Giving Email
+git config --global user.email dizon6171@gmail.com
+
+//Always set in Main
+git config --global init.default branch main
+
+//Show all available comands
+git config -h
+
+//Changinge Directory or Change the file you want to edit
+cd d:
+cd Desktop
+cd html
+
+//Reinitialized existing Git repository
+git init
+
+//Checking the Status or Tracking the Status
+git status
+
+//Adding File in Git Repository
+git add mosh2.html
+
+//Delete or Remove File on Git Repository
+git rm --cached Mosh2.html
+
+//Add all Files
+git add . 
+
+//Restoring the edited file into original file
+git restore Mosh2.html
+
+//Adding or Save the edited file
+git add Mosh2.html
+
+//If want to use the previous Commands, to less the hassle
+press the arrow up and down key on your keyboard
+
+//If you want Ignore a Files or to Not Expose in Public 
+Because the Files is Important, Just use gitignore file. 
+Usually inside of the gitignore files is the
+NodeModules, SQL, Environment Variables.
+touch .gitignore
+
+//Add a meaningfull comment or title to understand others who read
+git commit -m "Added initial files"
+
+
+
+//THE USE OF BRANCHES ARE USUALLY, WHEN YOU WORKS IN FEATURES AND BUG FIX TO COLLABORATES TO OTHER WEBDEVS
+
+//CREATING BRANCHES
+git branch (name you want)
+	git branch example
+
+//CHECKING BRANCH
+git branch --list
+
+//GOING INSIDE THE BRANCH
+git checkout (name you put)
+	git checkout example	
+
+//HOW TO GOING BACK IN MAIN
+//THE MAIN BRANCH IS THE FILE YOU CREATED FIRST
+git checkout main
+
+//DELETING BRANCH
+git branch -d (name you put)
+	git branch -d example
+
+//WHEN YOU WANT SHORTCUT TO DIRECT CREAT AND GOING IN BRANCH
+git checkout -b (name you want)
+	git checkout -b example
+
+//WHEN YOU WANT YOUR BRANCH IS ALWAYS UP TO DATE TO YOUR MAIN
+git pull origin main
+
+
+
+//PUSHING ANY CHANGES FILE IN REPOSITORY
+- FIRST COPY IN YOUR PC THE FILE THEN PASTE IN GIT BASH
+- AFTER PASTING THE FILE,  THEY AUTOMATICALLY POP UP OR OPEN THE FILE IN YOUR SCREEN
+- THEN YOU CAN ALREADY MAKE A CHANGES OR EDIT IT. WHEN YOU ARE FINISH EDITING SAVE IT.
+- THEN GO BACK IN GIT BASH TO CHECK THE STATUS OF YOUR GIT (git status).
+- THEN USE THIS SYNTAX (git add .) TO ADD YOUR EDITED FILE
+- PUT A COMMIT OR COMMENT (git commit -m "Updated sample_text.text"
+- YOU CAN ALREADY PUSH THE EDITED FILE (git push origin main)
+
+//TRICKS IF YOU DONT WANT TO POP UP ANY MORE THE PUSH COMMAND,
+AND DON'T WANT TYPE ANYMORE YOUR USERNAME AND PASSSWORDS
+git config --global credential.helper wincred
+
+//PULL YOUR UPDATED FILE IN YOUR BRANCH OR SAVE YOUR EDITED FILE IN YOUR BRANCH
+- FIRST OPEN OR GO TO YOUR BRANCH (git checkout nameyouchose) 
+- THEN USE THIS SYNTAX (git pull origin main)
+
+//MERGING YOUR BRANCH INTO THE MAIN
+git merge -m yourbranch
+git merge -m "You can put message" yourbranch
